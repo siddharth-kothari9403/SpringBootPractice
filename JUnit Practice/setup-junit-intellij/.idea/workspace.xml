@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8e07cdb5-8db4-4f91-a720-5b2af8b4cdfe" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="38pyk9i5cz3UQa9cHJRRpQCDZQA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.BankAccountAssertionsTest.testBankAccountActivePostCreation.executor": "Run",
+    "JUnit.BankAccountAssertionsTest.testBankAccountHolderName.executor": "Run",
+    "JUnit.BankAccountAssertionsTest.testNoWithdrawalBelowMinimum.executor": "Run",
+    "JUnit.BankAccountAssertionsTest.testTimeout.executor": "Run",
+    "JUnit.BankAccountAssertionsTest.testWithdrawAndDeposit.executor": "Run",
+    "JUnit.BankAccountAssertionsTest.testWithdrawNotStuckAtZero.executor": "Run",
+    "JUnit.BankAccountAssumptionsTest.testActive.executor": "Run",
+    "JUnit.BankAccountAssumptionsTest.testActiveWithAssumeFalse.executor": "Run",
+    "JUnit.BankAccountAssumptionsTest.testActiveWithAssumingThat.executor": "Run",
+    "JUnit.BankAccountBeforeAndAfterTest.executor": "Run",
+    "JUnit.BankAccountConditionalTest.executor": "Run",
+    "JUnit.BankAccountDITest.testDeposit.executor": "Run",
+    "JUnit.BankAccountDisabledTest.executor": "Run",
+    "JUnit.BankAccountNestedTest.executor": "Run",
+    "JUnit.BankAccountOrderedExecutionTest.executor": "Run",
+    "JUnit.BankAccountParametrizedTest.depositAndNameTest.executor": "Run",
+    "JUnit.BankAccountParametrizedTest.depositAndNameTestCsvFile.executor": "Run",
+    "JUnit.BankAccountParametrizedTest.executor": "Run",
+    "JUnit.BankAccountParametrizedTest.testDayOfWeek.executor": "Run",
+    "JUnit.BankAccountTest.executor": "Run",
+    "JUnit.BankAccountTest.testDeposit.executor": "Run",
+    "JUnit.BankAccountTest.testWithdrawal.executor": "Run",
+    "JUnit.BankAccountTimeoutTest.testDepositTimeoutAssertion.executor": "Run",
+    "JUnit.CalculateMethodsMockitoTest.executor": "Run",
+    "JUnit.CalculateMethodsTest.executor": "Run",
+    "JUnit.CalculateMethodsTest.testCalculate.executor": "Run",
+    "JUnit.CalculateMethodsTest.testExceptionDivide.executor": "Run",
+    "JUnit.CodeTest.executor": "Run",
+    "JUnit.TestTest.test.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/Siddharth.Kothari/Desktop/SpringBootPractice/JUnit Practice/setup-junit-intellij/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.CalculateMethodsMockitoTest">
+    <configuration name="BankAccountBeforeAndAfterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="setup-junit-intellij" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankAccountBeforeAndAfterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountConditionalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="setup-junit-intellij" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankAccountConditionalTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountDisabledTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="setup-junit-intellij" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankAccountDisabledTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountParallelExecutionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="setup-junit-intellij" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankAccountParallelExecutionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculateMethodsMockitoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="setup-junit-intellij" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CalculateMethodsMockitoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CalculateMethodsMockitoTest" />
+        <item itemvalue="JUnit.BankAccountDisabledTest" />
+        <item itemvalue="JUnit.BankAccountConditionalTest" />
+        <item itemvalue="JUnit.BankAccountBeforeAndAfterTest" />
+        <item itemvalue="JUnit.BankAccountParallelExecutionTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e07cdb5-8db4-4f91-a720-5b2af8b4cdfe" name="Changes" comment="" />
+      <created>1769510948912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1769510948912</updated>
+      <workItem from="1769510950166" duration="657000" />
+      <workItem from="1769571933135" duration="6141000" />
+      <workItem from="1769593646178" duration="2477000" />
+      <workItem from="1769657624318" duration="5419000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
