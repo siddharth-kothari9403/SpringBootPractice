@@ -28,7 +28,7 @@ public class TourService {
     }
 
     public long total(){
-        return tourPackageRepository.count();
+        return tourRepository.count();
     }
 
     public List<Tour> lookupByPackage(String tourPackageCode){
