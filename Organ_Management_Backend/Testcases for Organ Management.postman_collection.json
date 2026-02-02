@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "d20cd6ef-7722-4202-baf8-36033c3135cd",
+		"name": "Testcases for Organ Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26829909"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/authenticate",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();\r",
+							"const token = responseJson.token;\r",
+							"\r",
+							"pm.test(\"200 OK\", function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(token).to.not.eql(null);\r",
+							"    pm.expect(token).to.not.eql(\"\");\r",
+							"})\r",
+							"\r",
+							"pm.collectionVariables.set('token', token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"doctor1\",\r\n    \"password\":\"test123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/doctor/viewPatients",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json()\r",
+							"\r",
+							"pm.test(\"Is an array\", function(){\r",
+							"    pm.expect(responseJson).to.be.an('array')\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/doctor/viewPatients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"viewPatients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/donor/addInfo/1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseText = pm.response.text();\r",
+							"\r",
+							"pm.test(\"No match found\", function(){\r",
+							"    pm.expect(responseText).to.include(\"Added but currently no matches found/available\")\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"organName\":\"Eyes\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/donor/addInfo/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"donor",
+						"addInfo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/recipient/addInfo/3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseBody1 = pm.response.json();\r",
+							"const did = responseBody1.donor.donorId;\r",
+							"const rid = responseBody1.recipient.recipientId;\r",
+							"\r",
+							"pm.test(\"Match found\", function(){\r",
+							"    pm.expect(did).to.not.eql(null);\r",
+							"    pm.expect(rid).to.not.eql(null);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"organName\":\"Eyes\",\r\n    \"priority\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/recipient/addInfo/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recipient",
+						"addInfo",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": ""
+		}
+	]
+}
